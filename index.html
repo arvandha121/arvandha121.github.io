@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/css/styles.css">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./packages/js/main.js">
+
+        <!--==================== ICON ====================-->
+        <link rel="shortcut icon" href="packages/images/icon.png">
+
+        <title>Portfolio - Nauvan</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo" title="Nauvan">
+                    <img src="packages/images/icon.png" alt="" style="position:relative; width: 10%; margin-right: 10rem;">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                          <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i>Certification
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Portfolio                                
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact                               
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                <div class="nav__btns" style="margin-left: 1rem;">
+                    <!-- Theme change button -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.instagram.com/arvandha121/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                            <a href="https://www.github.com/arvandha121" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arief-nauvan-2b436224a/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x="" xlink:href="packages/images/nauvan.jpg" style="width:100%"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'am <br>Arief Nauvan Ramadha</h1>
+                            <h3 class="home__subtitle">Student  Information Technology State Polytechnic of Malang.</h3>
+                            <p class="home__description" style="font-size: 70%;">
+                                My name is Arief Nauvan Ramadha, I'm usually called Nauvan. I'm a student majoring in Information Technology 
+                                at State Polytechnic of Malang. I enjoy learning about new things, such as website and mobile development, 
+                                and I'd like to make sure the software works well (quality assurance).
+                            </p>
+                            <a href="#contact" class="button button--flex home__button">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="packages/images/2041720134.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            A student majoring in information technology at the State Polytechnic of Malang. 
+                            Has a hobby of learning new things about the world of IT such as website development, 
+                            database design, network design, software testing, etc. Currently studying 
+                            software quality assurance and mobile programming.
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">02+</span>
+                                <span class="about__info-name">Completed <br> certifications</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">00+</span>
+                                <span class="about__info-name">companies<br>worked</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="packages/pdf/" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Here are the skills in my experience</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                         <!--==================== SKILL-1 ====================-->
+                         <div class="skills__content skills__open">
+                            <div class="skills__header">
+                               <i class="uil uil-brackets-curly skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Web Developer</h1>
+                                   <span class="skills__subtitle">More than 3 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">CSS</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__css"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">JavaScript</h3>
+                                       <span class="skills__number">60%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__js"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">PHP</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__wordpress"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">SQL</h3>
+                                       <span class="skills__number">60%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__js"></span>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                        
+                         <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-money-bill skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Mobile</h1>
+                                   <span class="skills__subtitle">More than 1 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bank"></span>
+                                    </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Flutter</h3>
+                                       <span class="skills__number">80%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__counter"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                    <div class="skills__titles">
+                                      <h3 class="skills__name">Kotlin</h3>
+                                      <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                       <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-analytics skills__icon"></i>
+                               <div>
+                                   <h1 class="skills__title">Fotograph</h1>
+                                   <span class="skills__subtitle">More than 2 years</span>
+                               </div>
+
+                               <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Concepts</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Human Interest</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__tab"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Lighting</h3>
+                                       <span class="skills__number">50%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__sql"></span>
+                                   </div>
+                               </div>
+                               <div class="skills__data">
+                                   <div class="skills__titles">
+                                       <h3 class="skills__name">Object</h3>
+                                       <span class="skills__number">70%</span>
+                                   </div>
+                                   <div class="skills__bar">
+                                       <span class="skills__percentage skills__google"></span>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      
+        <!--==================== CERTIFICATE AND  ====================-->
+        <section class="services section" id="services">
+            <h2 class="section__title">Certification</h2>
+            <span class="section__subtitle">
+                This certifications and awards are issued by the Government of Nganjuk Regency, <br>
+                At the School, and the National Professional Certification Agency (BNSP).
+            </span>
+            <div class="portfolio container grid">
+        
+        <!--==================== SERVICES 2 ====================--> 
+        <div class="services__content">
+            <div>
+                <i class="uil uil-money-bill skills__icon"></i>
+                <h3 class="services__title">Photography<br> </h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Photography<br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>won runner up 1st place a photography competition in Nganjuk regency 2019.</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>  
+       
+        <!--==================== SERVICES 3 ====================-->
+        <div class="services__content">
+            <div>
+                <i class="uil uil-arrow services__icon"></i>
+                <h3 class="services__title">Web Developer<br></h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+                View more
+                <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <h4 class="services__modal-title">Web Developer<br></h4>
+                    <i class="uil uil-times services__modal-close"></i>
+
+                    <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>I develop the user interface.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>Webpage development.</p>
+                        </li>
+
+                        <li class="services__modal-service">
+                            <i class="uil uil-check-circle services__modal-icon"></i>
+                            <p>I create Ux element interactions.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+  
+       
+        </div>
+        </section>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+
+            <h2 class="section__title">My Projects</h2>
+            <span class="section__subtitle">Here are some IT projects that i have done.</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+        <!--==================== PORTFOLIO 1 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/Portfolio/java-smstr-2-samsatlist-strukturdata.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Java CLI</h3>
+                    <p class="portfolio__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dolorem omnis optio dolorum esse necessitatibus obcaecati. 
+                        Doloribus magnam corporis, repudiandae excepturi aperiam voluptas quos veritatis?.
+                    </p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/Portfolio/ecommerce.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">E-Commerce website</h3>
+                    <p class="portfolio__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Facilis modi totam fuga tempore necessitatibus nihil quia rem illum nam vel, sed ipsum! Laudantium, labore quidem?.</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+        
+            <div class="portfolio__content grid swiper-slide">
+                <img src="./packages/images/Portfolio/UI dan UX design.jpg" alt="" class="portfolio__img">
+
+                <div class="portfolio_">
+                    <h3 class="portfolio__title">Brand Design</h3>
+                    <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Laboriosam cupiditate praesentium assumenda unde sapiente ullam!
+                    </p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <!-- add arrows-->
+            <div class="swiper-button-next">
+                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+            </div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+        
+        </div>
+
+        <!--==================== PORTFOLIO LIST ====================-->
+
+        <div class="container">
+            <div class="row justify-content-center">
+                
+            </div>
+            <center>
+                <div class="row" style="margin-top: 5rem;">
+                    <div class="col-lg-12">
+                        <div class="portfolio-filter-button text-center mb-30 wow fadeInDown">
+                            <ul class="filter-btn mb-30">
+                                <li data-filter="*" class="active">Show All</li>
+                                <li data-filter=".cat-1">Website</li>
+                                <li data-filter=".cat-2">Mobile</li>
+                                <li data-filter=".cat-3">Java</li>
+                                <li data-filter=".cat-4">UI/UX Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </center>
+            <div class="row masonry-row">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-1">
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="img-holder">
+                            <img src="./packages/images/Portfolio/teashop.jpg" alt="portfolio">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <h3 class="title"><a href="project-details.html">Teashop Up</a></h3>
+                                    <p><a href="#">Tea Shop Website</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-3">
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
+                        <div class="img-holder">
+                            <img src="./packages/images/Portfolio/java-smstr-1-inventorydata-daspro.jpg" alt="portfolio">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <h3 class="title"><a href="project-details.html">inventory Data</a></h3>
+                                    <p><a href="#">Java CLI Based</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-3">
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
+                        <div class="img-holder">
+                            <img src="./packages/images/Portfolio/java-smstr-2-samsatlist-strukturdata.jpg" alt="portfolio">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <h3 class="title"><a href="project-details.html">List Samsat</a></h3>
+                                    <p><a href="#">Java CLI Based</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-3">
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
+                        <div class="img-holder">
+                            <img src="./packages/images/Portfolio/java-smstr-3-gui-pbo.jpg" alt="portfolio">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <h3 class="title"><a href="project-details.html">GUI Parkir</a></h3>
+                                    <p><a href="#">Java CLI Based</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-2">
+                    <center>
+                        <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".3s">
+                            <div class="img-holder" style="width:40%">
+                                <img src="./packages/images/Portfolio/mobile-login.jpg" alt="portfolio">
+                                <div class="portfolio-hover">
+                                    <div class="hover-content">
+                                        <h3 class="title"><a href="project-details.html">Mobile</a></h3>
+                                        <p><a href="#">Login</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".3s">
+                        <center>
+                            <div class="img-holder" style="width:40%">
+                                <img src="./packages/images/Portfolio/mobile.jpg" alt="portfolio">
+                                <div class="portfolio-hover">
+                                    <div class="hover-content">
+                                        <h3 class="title"><a href="project-details.html">Mobile</a></h3>
+                                        <p><a href="#">List Categories</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12 portfolio-column cat-1">
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp">
+                        <div class="img-holder">
+                            <img src="./packages/images/Portfolio/ecommerce.jpg" alt="portfolio" data-wow-delay=".35s">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <h3 class="title"><a href="project-details.html">Electronics shop</a></h3>
+                                    <p><a href="#">Ecommerce Website</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-4">
+                    <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="img-holder">
+                            <img src="./packages/images/Portfolio/UI dan UX design.jpg" alt="portfolio">
+                            <div class="portfolio-hover">
+                                <div class="hover-content">
+                                    <h3 class="title"><a href="project-details.html">User Interface Design</a></h3>
+                                    <p><a href="#">Health Website</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="button-box text-center mt-30 wow fadeInUp">
+                        <a href="projects.html" class="main-btn arrow-btn bordered-btn btn-blue">View More Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+        <!--==================== PROJECT IN MIND ====================-->
+        <section class="project section">
+
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">You have a new project?</h2>
+                        <p class="project__description">Contact me now and get discounts on your Web development projects.</p>
+                        <a href="#contact" class="button button--flex button--white">Contact me
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                       
+                    </div>
+                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-phone-alt contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contatc__subtitle">(+62) 81217564952</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">E-mail</h3>
+                            <span class="contatc__subtitle">nauvan121@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contatc__subtitle">Nganjuk Regency, Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="" class="contact__label">E-mail</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Subject</label>
+                        <input type="text" class="contact__input">
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Description</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button button--flex">
+                            Send message
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">About me!</h1>
+                    <span class="footer__subtitle">A student majoring in information technology at the State Polytechnic of Malang. 
+                        Has a hobby of learning new things about the world of IT such as website development, database design, network design, 
+                        software testing, etc. Currently studying software quality assurance and mobile programming.
+                    </span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/nauvanramadha/" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/arvandha121/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://github.com/arvandha121/" target="_blank" class="footer__social">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arief-nauvan-2b436224a/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; Copyright. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="./packages/js/main.js"></script>
+</body>
+
+</html>
