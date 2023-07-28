@@ -20,6 +20,10 @@
         <link rel="shortcut icon" href="packages/images/icon.png">
 
         <title>Portfolio - Nauvan</title>
+
+        <!-- Add the EmailJS SDK -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -710,11 +714,11 @@
             <div class="contact__container container grid">
                 <div>
                     <div class="contact__information">
-                        <i class="uil uil-phone-alt contact__icon"></i>
+                        <i class="uil uil-instagram-alt contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contatc__subtitle">(+62) 81217564952</span>
+                            <h3 class="contact__title">chat me</h3>
+                            <span class="contatc__subtitle">arvandha121</span>
                         </div>
                     </div>
 
@@ -761,7 +765,7 @@
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <a href="#" class="button button--flex" id="sendButton">
                             Send message
                             <i class="uil uil-message button__icon"></i>
                         </a>
@@ -827,6 +831,41 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
+
+    <script>
+        // Initialize EmailJS with your user ID
+        emailjs.init("YOUR_USER_ID_FROM_EMAILJS");
+    
+        // Add event listener to the "Send message" button
+        document.getElementById("sendButton").addEventListener("click", function () {
+            // Get the form data
+            var name = document.querySelector(".contact__inputs .contact__content:nth-child(1) .contact__input").value;
+            var email = document.querySelector(".contact__inputs .contact__content:nth-child(2) .contact__input").value;
+            var subject = document.querySelector(".contact__content:nth-child(3) .contact__input").value;
+            var description = document.querySelector(".contact__content:nth-child(4) .contact__input").value;
+    
+            // Prepare the template parameters
+            var templateParams = {
+                to_email: "nauvan121@gmail.com",
+                from_name: name,
+                from_email: email,
+                subject: subject,
+                message_html: description,
+            };
+    
+            // Send the email using the template
+            emailjs.send("YOUR_SERVICE_ID_FROM_EMAILJS", "YOUR_TEMPLATE_ID_FROM_EMAILJS", templateParams)
+                .then(function (response) {
+                    // Handle success (optional)
+                    console.log("Email sent successfully!", response);
+                    alert("Message sent successfully!");
+                }, function (error) {
+                    // Handle errors (optional)
+                    console.log("Failed to send the email.", error);
+                    alert("Failed to send the message. Please try again later.");
+                });
+        });
+    </script>
 </body>
 
 </html>
