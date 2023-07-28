@@ -21,8 +21,23 @@
 
         <title>Portfolio - Nauvan</title>
 
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
         <!-- Add the EmailJS SDK -->
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            emailjs.init('JQD7lktBpRBR6o9Yy')
+        </script>
+
+        <style>
+            .contact__content {
+                border: 2px solid #000000;
+                padding: 20px;
+            }
+
+            .contact__content label {
+                font-weight: bold;
+            }
+        </style>
         
     </head>
     <body>
@@ -744,31 +759,26 @@
                 <form action="" class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <label for="from_name" class="contact__label">Name</label>
+                            <input type="text" name="from_name" id="from_name" class="contact__input">
                         </div>
 
                         <div class="contact__content">
-                            <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
+                            <label for="email" class="contact__label">E-mail</label>
+                            <input type="email" name="email" id="email" class="contact__input">
                         </div>
                     </div>
 
                     <div class="contact__content">
-                        <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
-                    </div>
-
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <label for="description" class="contact__label">Description</label>
+                        <textarea name="description" name="description" id="description" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex" id="sendButton">
+                        <button class="button" onclick="sendEmail(event)">
                             Send message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -811,7 +821,7 @@
                     <a href="https://github.com/arvandha121/" target="_blank" class="footer__social">
                         <i class="uil uil-github-alt"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/arief-nauvan-2b436224a/" target="_blank" class="footer__social">
+                    <a href="https://www.linkedin.com/in/arief-nauvan-ramadha-2b436224a/" target="_blank" class="footer__social">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
                 </div>
@@ -833,38 +843,36 @@
     <script src="./packages/js/main.js"></script>
 
     <script>
-        // Initialize EmailJS with your user ID
-        emailjs.init("YOUR_USER_ID_FROM_EMAILJS");
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent page reload
     
-        // Add event listener to the "Send message" button
-        document.getElementById("sendButton").addEventListener("click", function () {
-            // Get the form data
-            var name = document.querySelector(".contact__inputs .contact__content:nth-child(1) .contact__input").value;
-            var email = document.querySelector(".contact__inputs .contact__content:nth-child(2) .contact__input").value;
-            var subject = document.querySelector(".contact__content:nth-child(3) .contact__input").value;
-            var description = document.querySelector(".contact__content:nth-child(4) .contact__input").value;
+            // Get the input values
+            var from_name = document.getElementById("from_name").value;
+            var email = document.getElementById("email").value;
+            var description = document.getElementById("description").value;
     
-            // Prepare the template parameters
-            var templateParams = {
-                to_email: "nauvan121@gmail.com",
-                from_name: name,
-                from_email: email,
-                subject: subject,
-                message_html: description,
+            // Check if required fields are filled
+            if (!from_name || !email || !description) {
+                alert("Please fill in all the required fields.");
+                return;
+            }
+    
+            // If all required fields are filled, proceed with sending the email
+            var params = {
+                from_name: from_name,
+                email: email,
+                description: description,
             };
     
-            // Send the email using the template
-            emailjs.send("YOUR_SERVICE_ID_FROM_EMAILJS", "YOUR_TEMPLATE_ID_FROM_EMAILJS", templateParams)
-                .then(function (response) {
-                    // Handle success (optional)
-                    console.log("Email sent successfully!", response);
-                    alert("Message sent successfully!");
-                }, function (error) {
-                    // Handle errors (optional)
-                    console.log("Failed to send the email.", error);
-                    alert("Failed to send the message. Please try again later.");
+            emailjs
+                .send("service_d6c44ug", "template_bd29l3p", params)
+                .then(function (res) {
+                    alert("Success! " + res.status);
+                })
+                .catch(function (error) {
+                    alert("Error: " + error);
                 });
-        });
+        }
     </script>
 </body>
 
